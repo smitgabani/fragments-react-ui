@@ -7,6 +7,6 @@ export default function Banner() {
         <h1 className="logo-font">Fragments UI</h1>
         <p>Testing our Fragments microservice.</p>
       </div>
-    </div>
+    </div> 
   );
 }

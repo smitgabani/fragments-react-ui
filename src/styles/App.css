@@ -5,6 +5,18 @@
   More info on how to modify the Conduit SASS styles can be found at
   https://github.com/GoThinkster/conduit-sass
 */
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  padding-bottom: 35px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.card-body {
+  line-height: 0.1; 
+}
+/* ------------------------------------------------------------------------- */
 .logo-font {
   font-family: "Titillium Web", sans-serif; }
 
