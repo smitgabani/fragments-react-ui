@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { appLogout, appLogin } from '../../features/user';
 import { logout } from '../../UserPool';
+import { useNavigate } from 'react-router-dom';
 
 function LoggedOutView() {
   if (true)
@@ -30,6 +31,7 @@ function LoggedOutView() {
 }
 
 function LoggedInView({ user, logout }) {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   return (
     <ul className="nav navbar-nav pull-xs-right">
@@ -44,9 +46,16 @@ function LoggedInView({ user, logout }) {
         onClick={() => {
           dispatch(appLogout());
           logout();
+          navigate(`/`);
         }}
       >
         <div className="nav-link">Logout</div>
+      </li>
+
+      <li className="nav-item">
+        <Link to={`/dashboard`} className="nav-link">
+          Dashboard
+        </Link>
       </li>
 
       <li className="nav-item" style={{ paddingLeft: 100 }}>

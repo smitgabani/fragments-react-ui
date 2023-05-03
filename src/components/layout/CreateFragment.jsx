@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { postFragment } from '../../api';
 import { useSelector } from 'react-redux';
 

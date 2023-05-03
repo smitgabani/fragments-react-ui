@@ -3,3 +3,7 @@ export { default as Login } from './Login';
 export { default as Register } from './Register';
 export { default as UserProfile } from './UserProfile';
 export { default as Verify } from './Verify';
+export { default as CreateFragment } from './CreateFragment';
+export { default as Dashboard } from './Dashboard';
+export { default as FragmentView } from './FragmentView';
+export { default as UpdateFragment } from './UpdateFragment';
